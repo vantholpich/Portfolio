@@ -45,8 +45,8 @@ export default function HomeScreen() {
                 </View>
 
                 <Section title="Successful Apps" apps={successfulApps} />
-                <Section title="Currently Building" apps={inProgressApps} />
-                <Section title="Failed Apps" apps={failedApps} />
+                <Section title="Currently building" apps={inProgressApps} />
+                <Section title="Failed apps" apps={failedApps} />
             </ScrollView>
         </View>
     );
@@ -109,7 +109,6 @@ const styles = StyleSheet.create({
         fontWeight: '700',
         color: '#fff',
         marginBottom: 16,
-        textTransform: 'uppercase',
         letterSpacing: 1,
     },
     sectionContent: {
