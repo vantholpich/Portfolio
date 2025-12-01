@@ -29,7 +29,8 @@ export function AppCard({ app, index }: AppCardProps) {
 
     const handlePress = () => {
         if (app.url) {
-            Linking.openURL(app.url);
+            const url = app.url.startsWith('http') ? app.url : `https://${app.url}`;
+            Linking.openURL(url);
         }
     };
 
