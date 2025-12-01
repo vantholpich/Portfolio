@@ -45,8 +45,8 @@ export default function HomeScreen() {
                 </View>
 
                 <Section title="Successful Apps" apps={successfulApps} />
-                <Section title="In Progress" apps={inProgressApps} />
-                <Section title="Failed Experiments" apps={failedApps} />
+                <Section title="Currently Building" apps={inProgressApps} />
+                <Section title="Failed Apps" apps={failedApps} />
             </ScrollView>
         </View>
     );
