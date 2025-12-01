@@ -60,7 +60,6 @@ export function AppCard({ app, index }: AppCardProps) {
                             </View>
                             <View style={styles.titleContainer}>
                                 <Text style={styles.title}>{app.name}</Text>
-                                <Text style={styles.type}>{app.type === 'ios' ? 'iOS App' : 'Web App'}</Text>
                             </View>
                             {app.url && <ExternalLink size={20} color="rgba(255,255,255,0.5)" />}
                         </View>
